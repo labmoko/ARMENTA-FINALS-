@@ -1,0 +1,42 @@
+<!-- Sidebar -->
+<div id="sidebar" style="padding: 0 40px;">
+
+  
+  <!-- MeAppé Link -->
+  <br><br>
+  <a class="navbar-brand" routerLink="/home" style="font-size: 24px; margin-bottom: 20px;">MeAppé</a>
+
+  <ul class="navbar-nav ml-auto">
+    <div class="flex">
+    <li class="nav-item" *ngIf="isLoggedIn()">
+      <a class="nav-link" routerLink="/post-list" style="margin-top: 50px;">Home</a>
+    </li>
+
+    <li class="nav-item" *ngIf="!isLoggedIn()">
+      <a class="nav-link" routerLink="/login">Log in</a>
+    </li>
+
+    <li class="nav-item" *ngIf="!isLoggedIn()">
+      <a class="nav-link" routerLink="/signup">Sign up</a>
+    </li>
+
+   <!--<li class="nav-item" *ngIf="isLoggedIn()">
+      <p class="nav-link"><b>User:</b> {{ currentUserEmail }}</p>
+    </li>--> 
+
+    <li class="nav-item" *ngIf="isLoggedIn()">
+      <a class="nav-link" routerLink="/home">Profile</a>
+    </li>
+
+    <li class="nav-item" *ngIf="isLoggedIn()">
+      <a class="nav-link" routerLink="/post-add">Create Post</a>
+    </li>
+
+    <li class="nav-item" *ngIf="isLoggedIn()">
+      <a class="nav-link" (click)="logout()">Log out</a>
+    </li>
+  </div>
+  </ul>
+
+ 
+</div>

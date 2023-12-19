@@ -1,0 +1,32 @@
+/**.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 500px;
+  }
+  
+  .search-input {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-button, .cancel-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: white;
+  }*/

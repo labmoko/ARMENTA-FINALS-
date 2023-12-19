@@ -1,0 +1,32 @@
+.polaroid {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 650px; /* Adjust the width as needed */
+  }
+  
+  .img-responsive {
+    border-radius: 8px; /* Add rounded corners to the image */
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+  }
+  
+  .settings-btn {
+    margin-left: auto; /* Move the "Settings" button to the right */
+  }
+  
+  .comment {
+   margin-top: 10px;
+  }
+  
+  .popup-wrapper {
+    margin-top: 20px;
+  }
+  

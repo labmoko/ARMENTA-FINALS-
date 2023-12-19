@@ -1,0 +1,41 @@
+<div style="display: flex; justify-content: space-between; padding: 0 10px;">
+  <!-- Left side -->
+  <div style="margin-top: 250px; margin-left: 100px;">
+    <h1><b>MeAppé💛</b></h1>
+    <h2>Connect with your friends around the campus using MeAppé</h2>
+    
+  </div>
+
+  <!-- Right side -->
+  <div style="width: 800px; margin-top: 160px; margin-left: 100px; margin-right: 100px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); box-sizing: border-box; padding: 20px;">
+    <form [formGroup]="loginForm" (ngSubmit)="loginUser()" type="">
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" class="form-control" formControlName="email" style="width: 100%; padding: 10px; font-size: 16px;" />
+        <label class="form-label" for="form2Example1">Email address</label>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="form2Example2" class="form-control" formControlName="password" style="width: 100%; padding: 10px; font-size: 16px;" />
+        <label class="form-label" for="form2Example2">Password</label>
+      </div>
+
+      <!-- error message -->
+      <div *ngIf="firebaseErrorMessage != ''" class="error-style">
+        <span>{{ firebaseErrorMessage }}</span>
+      </div>
+
+      <!-- Submit button 
+      <button type="submit" class="btn btn-primary btn-block mb-4" style="font-size: 18px;">Log in</button> -->
+
+      <!-- Submit button -->
+<button type="submit" class="btn btn-primary mb-4" style="width: 100%; padding: 10px; font-size: 18px;">Log in</button>
+
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>Not yet signed up? <a routerLink="/signup" style="font-size: 16px;">Sign up</a></p>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-box">
+        <h1 *ngIf="editMode == false">Create Post</h1>
+        <h1 *ngIf="editMode == true">Edit Post</h1><br><br>
+
+        <form  (ngSubmit)="onsubmit()" [formGroup]="form">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="title">Title</label>
+              <input type="email" class="form-control" id="title" placeholder="" formControlName="title">
+            </div><br>
+
+            <div class="form-group col-md-6">
+              <label for="image">Image</label>
+              <input type="text" class="form-control" id="image" placeholder="" formControlName="imgPath">
+              <img src="{{form.value.imgPath}}" alt=""  width="340px" height="200px" ><br>
+            </div>
+          </div>
+
+          <div class="form-group col-md-10">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="" formControlName="description">
+          </div>
+
+          <br><br>
+          <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Save</button> |
+          <button type="reset"  class="btn btn-danger" routerLink="/post-list">Cancel</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div> 
+

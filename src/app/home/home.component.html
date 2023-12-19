@@ -1,0 +1,9 @@
+<app-header></app-header>
+<!--<app-sidebar></app-sidebar>-->
+<br><br><br>
+<div style="position: absolute; left: 50%; transform: translate(-40%);">
+    <h1>Your Posts</h1><hr><br><br>
+    <app-post *ngFor="let post of listofPosts; let i = index" [post]="post" [index]="i"></app-post>
+    <br><br>
+  </div>
+  

@@ -1,0 +1,28 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 16rem;
+  padding: 1rem 1rem;
+  background-color: #f8f9fa;
+}
+
+#sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+  font-size: 20px; /* Increase the font size */
+}
+
+#sidebar .nav-link:hover {
+  color: #007bff; /* Change the color on hover */
+  cursor: pointer; /* Change the cursor to a hand pointer on hover */
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 60vh;
+}
+

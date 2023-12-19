@@ -1,0 +1,21 @@
+
+
+<!--<div class="input-group" style="left:50%; top: 50%; transform: translate( 10%, -250%);">
+    <input class="form-control rounded" [(ngModel)]="searchTerm" placeholder="Search posts" aria-label="Search" aria-describedby="search-addon" />
+    <button class="btn btn-outline-primary" data-mdb-ripple-init (click)="onSearch()">Search Posts</button>
+    <button class="btn btn-outline-danger" data-mdb-ripple-init (click)="cancelSearch()" [disabled]="!searchTerm">Cancel</button>
+  </div>-->
+ <!-- <div class="input-group mb-3 " style=" width: 50vw; margin-left: 380px;">
+    <input class="form-control" [(ngModel)]="searchTerm" placeholder="Search posts" aria-label="Search" aria-describedby="search-addon" />
+    <button class="btn btn-primary" (click)="onSearch()">Search Posts</button>
+    <button class="btn btn-danger" (click)="cancelSearch()" [disabled]="!searchTerm">Cancel</button>
+  </div>-->
+  <div class="input-group mb-3 " style=" width: 40vw; margin-left: 380px;">
+    <input class="form-control" [(ngModel)]="searchTerm" placeholder="Search posts" aria-label="Search" aria-describedby="search-addon" />
+    <button class="btn btn-primary" (click)="onSearch()">
+        <i class="fas fa-search"></i>
+    </button>
+    <button class="btn btn-danger" (click)="cancelSearch()" [disabled]="!searchTerm">
+        <i class="fas fa-times"></i>
+    </button>
+</div>

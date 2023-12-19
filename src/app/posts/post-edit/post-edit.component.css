@@ -1,0 +1,25 @@
+input.ng-invalid.ng-touched, textarea.ng-ivalid.ng-touched{
+    border:1px solid rgb(255, 89, 0);
+}
+/*.form-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+   
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 250px; /* Adjust this value as needed
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }*/
+
+  .form-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /*margin: 100px auto 50px auto; /* Top and bottom margins are 100px and 50px, left and right margins are automatically set */
+    width: 100%; /* Adjust this value as needed */
+    margin-top: 50px;
+    margin-left: 250px;
+}
